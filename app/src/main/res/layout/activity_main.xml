@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.affixus.example.kotlinexamplepractice.MainActivity">
+
+    <!--<TextView
+        android:id="@+id/tv_hellow_world"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/et_val1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="value 1"/>
+        <EditText
+            android:id="@+id/et_val2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="value 2"/>
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total "
+            android:layout_marginLeft="5dp"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/btn_open_new_Screen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open New Screen"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
